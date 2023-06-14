@@ -1,0 +1,91 @@
+/* new1.css */
+body {
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 14pt;
+    color: #fff;
+    background-color: #1BA1E2;
+    padding: 20px;
+    margin: 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.thumbnail {
+    max-height: 270px;
+    max-width: 270px;
+    /* width: auto; */
+    display: block;
+    margin: 1px;
+}
+
+.image-container {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #1BA1E2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 25px;
+}
+
+.download-button:hover {
+    background-color: #0078D7;
+}
+
+.watermark-image {
+    background-color: blue;
+}
+
+#imagesContainer {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-columns: repeat(2, minmax(300px, 1fr)); */
+    gap: 40px;
+    max-width: 95%;
+    padding: 0 20px;
+}
+
+/* @media screen and (max-width: 1024px) {
+    #imagesContainer {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #imagesContainer {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+} */
+
+.wrapper {
+    margin: 0 20px;
+}
+
+.image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+}
+
+.image-wrapper .thumbnail:nth-child(1) {
+    display: none;
+}

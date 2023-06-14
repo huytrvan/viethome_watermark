@@ -1,0 +1,34 @@
+<!-- new1.html -->
+<!DOCTYPE lang="vi">
+<html>
+
+<head>
+    <link rel="stylesheet" href="./src/index.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./src/favicon/site.webmanifest">
+    <title>Chèn logo VietHome</title>
+</head>
+
+<body>
+    <h1>
+        <img src="./src/favicon/apple-touch-icon.png" alt="Logo VietHome" width="30" height="30"
+            style="margin-bottom: -7.5px; padding:0">
+        Chèn logo VietHome
+
+    </h1>
+    <div class="wrapper">
+        <p>Upload ảnh để chèn logo VietHome</p>
+        <input id="upload" type="file" accept="image/*" multiple label="Upload ảnh" />
+        <label for="sizeInput">Kích thước logo (%): </label>
+        <input id="sizeInput" type="number" min="1" max="100" value="50" />
+        <button id="updateButton">Cập nhật</button>
+    </div>
+    <div id="images" style="visibility: hidden;">
+        <div id="imagesContainer"></div>
+    </div>
+    <script src="./src/index.js"></script>
+</body>
+
+</html>
